@@ -1,0 +1,145 @@
+<html>
+    <head>
+    <title> Aakash </title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+<style>
+    
+    body {
+        
+        margin-top: 5vh;
+         text-align: center;
+     
+           background-image: url(IMG_20191224_173700.jpg);
+            
+            animation:spin 10s linear alternate infinite;
+}
+
+       @keyframes spin{
+            100%{background-position:100%;}
+        
+        
+    }
+    
+     header {
+        
+       
+        text-align: center;
+        background-color:azure;
+        color:currentColor;
+         font-size: 30px;
+         
+          border-radius: 15px;
+    }
+    
+    fieldset {
+        
+        margin-top: 17vh;
+        margin-left: 28vw;
+        margin-right: 28vw;
+        
+        text-align: center;
+       /* background-color: aquamarine;  */
+        
+        background-image: url(new%20instagram%20viral%20editing%20background.jpg);
+        
+        font-size: 25px;
+        
+        border-radius: 15px;
+    }
+    input {
+        text-align: center;
+        
+        font-size: 25px;
+        
+         border-radius: 8px;
+    }
+    
+    button {
+        
+        font-size: 25px;
+        
+         border-radius: 8px;
+    }
+    
+    button:hover {
+        
+        background-color:darkorange;
+    }
+     header:hover {
+        
+        background-color:darkorange;
+    }
+     input:hover {
+        
+        background-color:darkorange;
+    }
+    
+     #doc:hover {
+        
+        background-color:azure;
+    }
+    
+    </style>
+        
+        <header>
+        <h1>Aakash's World!</h1>
+            </header>
+        
+        <div id="doc">
+        
+    <fieldset>
+       <form method="post">
+           <p>
+        Enter name:
+        <input type="text" value="" placeholder="name" name="nm" 
+               id="nm"  required>
+           
+         </p>  <br> <p>
+           
+        Enter password:   
+        <input type="password" placeholder="password"  value="" name="pswd" id="pswd" required>
+           
+           </p><br>
+           
+    <button onclick="sub()">
+           Submit
+           </button>       
+           
+        
+       </form> 
+    </fieldset>    
+    </div> 
+        
+    <script>
+        
+        function sub() {
+           
+            var apple = document.getElementById('pswd').value ;
+            
+            var orange = document.getElementById('nm').value ;
+            
+                if(apple=="sg" && orange.length>=3 )  {
+                    
+                    alert("welcome");
+                    
+                    window.open('abc.htm');
+                    
+                }
+                    
+            else {
+                alert("Unauthorised access");
+                
+                document.getElementById('doc').innerHTML = "<h1><u><strong><font size=40px>Sorry.. <br> Access denied!</h1></u></strong></font>" ;
+            }
+        }
+        
+       
+       
+        
+        </script>    
+        </body>
+</html>
